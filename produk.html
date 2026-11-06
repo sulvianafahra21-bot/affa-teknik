@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk | Affa Teknik</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>(function(){var d=document.documentElement,k="affaTema";try{var t=localStorage.getItem(k)||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");d.dataset.theme=t}catch(e){d.dataset.theme="light"}document.addEventListener("click",function(e){if(!e.target.closest(".theme-toggle"))return;var n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem(k,n)}catch(x){}})})()</script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data-produk.js"></script>
+  <script defer src="js/utama.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <div class="breadcrumbs section"><a href="index.html">Beranda</a><span>/</span><a href="katalog.html">Katalog</a><span>/</span><span>Detail produk</span></div>
+    <section class="section product-detail-section" id="product-detail"><div class="loading-box">Memuat detail produk...</div></section>
+    <section class="section related-section"><div class="section-heading"><div><span class="eyebrow">Produk lainnya</span><h2>Mungkin kamu juga butuh</h2></div><a class="text-link" href="katalog.html">Lihat katalog →</a></div><div class="product-grid" id="related-products"></div></section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
