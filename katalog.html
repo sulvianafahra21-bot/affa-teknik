@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk | Affa Teknik</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>(function(){var d=document.documentElement,k="affaTema";try{var t=localStorage.getItem(k)||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");d.dataset.theme=t}catch(e){d.dataset.theme="light"}document.addEventListener("click",function(e){if(!e.target.closest(".theme-toggle"))return;var n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem(k,n)}catch(x){}})})()</script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data-produk.js"></script>
+  <script defer src="js/utama.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <section class="page-banner"><div><span class="eyebrow">Katalog Affa Teknik</span><h1>Temukan produk yang kamu butuhkan.</h1><p>Pilih produk, lihat detail, lalu masukkan ke keranjang belanja.</p></div><div class="banner-art"><img src="images/logo-affateknik.png" alt="Logo Affa Teknik"></div></section>
+    <section class="section catalog-section">
+      <div class="catalog-toolbar">
+        <div><h2>Semua produk</h2><p class="section-subtitle"><span id="product-count">10</span> kelompok produk tersedia</p></div>
+        <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="product-search" type="search" placeholder="Cari produk..." aria-label="Cari produk"></label>
+      </div>
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="Semua">Semua</button>
+        <button class="filter-chip" data-filter="Listrik" id="listrik">Perlengkapan listrik</button>
+        <button class="filter-chip" data-filter="Bangunan" id="bangunan">Peralatan bangunan</button>
+        <button class="filter-chip" data-filter="Pancing" id="pancing">Alat pancing</button>
+      </div>
+      <div class="product-grid catalog-grid" id="catalog-products"></div>
+      <div class="empty-state hidden" id="empty-products"><strong>Produk tidak ditemukan.</strong><p>Coba kata kunci atau kategori yang lain.</p></div>
+
+      <div class="policy-note" role="note">
+        <span class="policy-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 8v4l3 2"/></svg></span>
+        <div><strong>Kebijakan retur 7 hari</strong><p>Barang dapat diretur dalam 7 hari setelah diterima. Hubungi kami lewat WhatsApp dengan menyertakan nomor pesanan dan foto barang.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
