@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran & Checkout | Affa Teknik</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>(function(){var d=document.documentElement,k="affaTema";try{var t=localStorage.getItem(k)||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");d.dataset.theme=t}catch(e){d.dataset.theme="light"}document.addEventListener("click",function(e){if(!e.target.closest(".theme-toggle"))return;var n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem(k,n)}catch(x){}})})()</script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data-produk.js"></script>
+  <script defer src="js/utama.js"></script>
+  <script defer src="js/pembayaran.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <section class="page-banner compact-banner"><div><span class="eyebrow">Checkout mudah</span><h1>Selesaikan pesananmu.</h1><p>Pilih metode pembayaran, isi data pengiriman, lalu konfirmasi pesanan.</p></div><div class="banner-art"><img src="images/logo-affateknik.png" alt="Logo Affa Teknik"></div></section>
+    <section class="section checkout-section">
+      <div class="checkout-steps" id="checkout-progress">
+        <div class="step active" data-step="1"><span>1</span><b>Pembayaran</b></div>
+        <div class="step" data-step="2"><span>2</span><b>Pengiriman</b></div>
+        <div class="step" data-step="3"><span>3</span><b>Konfirmasi</b></div>
+      </div>
+      <div id="checkout-root"><div class="loading-box">Memuat checkout...</div></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
